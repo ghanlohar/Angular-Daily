@@ -1,7 +1,5 @@
 <label>
   Name: <input type="text" [formControl]="name"> 
   <p>Value is: {{ name.valueChanges || async}}</p>
-  <button (click)="updateName()">Change valuess</button>
+  <button (click)="updateName()">Change value</button>
 </label>
-
-
