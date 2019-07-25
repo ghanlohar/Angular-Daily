@@ -1,0 +1,10 @@
+<input type="text" [(ngModel)]="username"/>
+
+<p *ngIf="username else noUsername" [ngStyle]="{backgroundColor: getColor()}">Username is {{username}}</p>
+<ng-template #noUsername>
+  <p [ngStyle]="{backgroundColor: getColor()}" class="blank">Username is blank</p>
+</ng-template>
+
+
+<button [disabled]='!username' (click)='resetUsername($event)'>Reset Username!</button>
+

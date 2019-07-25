@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+ 
+</div>
+
+<div class="binding-assignments">
+  <app-binding></app-binding>
+</div>
+<div class="directive-assignments">
+  <app-directive-assign></app-directive-assign>
+</div>
+
+<div>
+  <p basicHighlight>This is basicHighlight styled para!</p>
+  <p appBetterHighlight [defaultColor]="'yellow'" [hoverColor] ="'red'">This is a appBetterHighlight para!</p>
+</div>
+
+<div>
+  <app-nameeditor></app-nameeditor>
+</div>

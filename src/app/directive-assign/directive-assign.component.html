@@ -1,0 +1,9 @@
+<button (click)="togglePara($event)">Display details</button>
+
+<p [hidden]="toggle">
+  Hi there!!
+</p>
+
+<ul>
+  <li *ngFor="let log of logs;trackBy:trackByFn" [ngStyle]="{'background-color': getBackground(log) }" [ngClass]="{'white': log.counter > 5}">{{log.ts}}</li>
+</ul>
