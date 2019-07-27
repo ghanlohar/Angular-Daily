@@ -9,6 +9,7 @@ import { BasicHighlightDirective } from './basichighlights/basichighlight.direct
 import { BetterhighlightDirective } from './betterhighlight/betterhighlight.directive';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NameeditorComponent } from './nameeditor/nameeditor.component';
+import { ProfileEditorComponent } from './profileeditor/profileeditor.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { NameeditorComponent } from './nameeditor/nameeditor.component';
     DirectiveAssignComponent,
     BasicHighlightDirective,
     BetterhighlightDirective,
-    NameeditorComponent
+    NameeditorComponent,
+    ProfileEditorComponent
   ],
   imports: [
     BrowserModule,
